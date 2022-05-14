@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Area</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Akshar:wght@300&family=Ubuntu&family=Work+Sans:ital,wght@1,500&display=swap"
+        rel="stylesheet">
+    <style>
+        .container {
+            display: grid;
+            grid-gap: 4px;
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                'section section section aside'
+                'bottom bottom bottom bottom'
+            ;
+        }
+
+        .item {
+            font-family: 'Ubuntu', sans-serif;
+            border: 2px solid black;
+            background-color: rgb(54, 136, 207);
+            padding: 23px;
+            color: white;
+            font-size: 23px;
+        }
+
+        #navbar {
+            grid-area: navbar;
+        }
+
+        #section {
+            grid-area: section;
+        }
+
+        #aside {
+            grid-area: aside;
+        }
+
+        #bottom {
+            grid-area: bottom;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="item" id="navbar">
+            Home Contact Us service
+        </div>
+
+        <div class="item" id="section">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium ab qui optio
+            hic! Cum, dicta enim! Tenetur omnis odit debitis, accusantium obcaecati, ipsa nisi quisquam eaque blanditiis
+            accusamus est quae, sapiente quaerat unde veniam quia et qui dolorem sit esse! Dolorem, eos sapiente
+            doloribus ab libero obcaecati enim sunt unde illum recusandae aliquam modi accusantium ex, saepe, cum
+            ratione quas ut officia non porro. Inventore praesentium impedit quos, rem expedita itaque velit enim?
+            Vitae, eos! Quis sint nihil iure omnis. Numquam alias vero totam doloremque laborum deserunt, quidem
+            blanditiis, deleniti exercitationem labore beatae facere, modi magnam? Voluptatem mollitia quidem
+            consequatur.</div>
+
+        <div class="item" id="aside">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda magni unde
+            aliquam numquam fugiat earum perferendis, omnis voluptate provident alias dolores, fugit consectetur autem
+            nulla laudantium illum voluptas ipsa perspiciatis, repudiandae impedit. Repudiandae quia dolorem dolores
+            nostrum numquam rerum praesentium odio sapiente laborum enim, minus rem autem tenetur? Aperiam velit rerum
+            adipisci reprehenderit. Natus aperiam dolorum, corporis iusto ipsum enim aspernatur numquam quam repellendus
+            dicta labore at quis quibusdam minima debitis repellat? Neque obcaecati, reiciendis sit praesentium quod
+            tempora quaerat recusandae vero cum voluptatum, in natus modi? Consequatur suscipit earum itaque minima
+            autem laudantium temporibus commodi? Quas, voluptatibus. Hic, ex.</div>
+
+        <footer class="item" id="bottom">Lorem ipsum dolor sit amet.</footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Child and Pseudo Selector</title>
+    <style>
+        .container {
+            display: block;
+            width: 421px;
+            margin: auto;
+            padding: 13px;
+        }
+
+        h2 {
+            text-decoration: underline;
+            font-weight: bold;
+            background-color: red;
+            color: white;
+            text-align: center;
+        }
+
+        .form {
+            display: block;
+            width: 208px;
+            padding: 13px;
+            border: 2px solid rebeccapurple;
+        }
+
+        a[target='blank'] {
+            display: block;
+            width: 190px;
+            color: green;
+            font-size: 32px;
+            font-weight: bold;
+            padding: 13px;
+        }
+
+        /* Selxting single instance of a  */
+        a[target='self'] {
+            display: block;
+            width: 214px;
+            color: blue;
+            font-size: 32px;
+            font-weight: bold;
+            padding: 13px;
+        }
+
+        /* selecting single instance of input tag  */
+        input[type='text'] {
+            background-color: aqua;
+            font-weight: bold;
+        }
+
+        /* This will apply CSS in 3th child   */
+        li:nth-child(3) {
+            color: aqua;
+            border: 2px solid red;
+            font-weight: bold;
+        }
+
+        li:nth-child(2n+0) {
+            color: rgb(19, 29, 222);
+        }
+        li:nth-child(odd) {
+           background-color:red ; 
+           color: white;
+        }
+        li:nth-child(even) {
+            color: rgb(24, 233, 139);
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Child and Pseudo Selector</h2>
+        <a href="http://google.com" target="blank">Go to Google</a>
+        <a href="http://google.com" target="self">Go to facebook</a>
+        <from action="" class="form">
+            <input type="text" placeholder="Enter Your Name" id="myname">
+            <input type="password" placeholder="Enter Password" id="mypassword">
+            <input type="button" value="Submit">
+        </from>
+        <ul>
+            <li class="item" id="item-1">First item</li>
+            <li class="item" id="item-2">Second item</li>
+            <li class="item" id="item-3">Third item</li>
+            <li class="item" id="item-4">Fourth item</li>
+            <li class="item" id="item-5">Fivth item</li>
+            <li class="item" id="item-6">Sixth item</li>
+        </ul>
+    </div>
+</body>
+
+</html>

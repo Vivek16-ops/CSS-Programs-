@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on CSS Selector</title>
+    <style>
+        h1 {
+            text-align: center;
+            background-color: red;
+            color: white;
+            font-weight: bold;
+        }
+
+        /* This will affect all p which comes under the div  */
+        /* div p {
+            background-color: rgb(5, 105, 53);
+            font: 30px;
+            color: white;
+        } */
+
+
+        /* This will only affect the p which comes under the li  */
+        /* div li p {
+            background-color: rgb(5, 105, 53);
+            font: 30px;
+            color: white;
+        } */
+
+        /* This will affect direct p which which comes under the div  */
+        /* div>p {
+            background-color: rgb(5, 105, 53);
+            font: 30px;
+            color: white;
+        } */
+
+        /* If p is right after div then this will work  */
+        div + p {
+            background-color: rgb(5, 105, 53);
+            font: 30px;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>More on CSS Selector</h1>
+    <div class="container">
+        <div class="box">
+            <ul>
+                <li class="item">
+                    <p>This is paragraph which comes under the list</p>
+                </li>
+            </ul>
+            <p>This is paragraph which comes under the direct box div..</p>
+        </div>
+        <p>This paragrapgh is comes under the direct div container and just after the div box.. </p>
+    </div>
+    <p>This is the outermost and independent paragraph which does not under any div and list .. And comes just after the container div </p>
+</body>
+
+</html>

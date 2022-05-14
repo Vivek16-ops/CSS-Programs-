@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        /* Universal selector */
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            background-color:  #cf25b1;
+        }
+        .container {
+            /* we can set margin and padding for top , bottom , right and left  */
+
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-color: aqua;
+            border: 2px solid black;
+            border-radius: 23px;
+            line-height: 19px;
+
+            /* padding-top: 58px;
+            padding-bottom: 58px;
+            padding-left: 30px;
+            padding-right: 30px; */
+
+            /* padding: 23px 56px 6px 78px; paading/margin = top right bottom left */
+            /* padding: 34px 19px; padding = y(top/bootm) and x(left/right)*/
+
+            padding: 9px 19px;
+            margin: 9px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h3>This is heading</h3>
+        <p id="firstpara">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt, repudiandae. Nam eos
+            dolorum provident dicta sapiente illum, mollitia, vero perspiciatis quidem perferendis ab sit sint
+            temporibus esse, ut cumque corporis! Non sint porro nostrum.</p>
+    </div>
+
+    <div class="container">
+        <h3>This is heading</h3>
+        <p id="secondpara">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt, repudiandae. Nam eos
+            dolorum provident dicta sapiente illum, mollitia, vero perspiciatis quidem perferendis ab sit sint
+            temporibus esse, ut cumque corporis! Non sint porro nostrum.</p>
+    </div>
+
+    <div class="container">
+        <h3>This is heading</h3>
+        <p id="thirdpara">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt, repudiandae. Nam eos
+            dolorum provident dicta sapiente illum, mollitia, vero perspiciatis quidem perferendis ab sit sint
+            temporibus esse, ut cumque corporis! Non sint porro nostrum.</p>
+    </div>
+</body>
+
+</html>

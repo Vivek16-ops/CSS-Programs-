@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vsisblity Property and z-index</title>
+    <style>
+        .box {
+            height: 170px;
+            width: 170px;
+            border: 3px solid black;
+        }
+
+        #box-1 {
+            /* z-index: will work only for relative , absolute , fixed and sticky position; */
+            /* z z-index: will decide which element will go back and which will come over other elements; */
+            /* z index whose value is greater will come over the other element and vice versa  */
+
+            /* box 1 will come over the box 2 */
+
+            position: relative;
+            top: 49px;
+            z-index: 34;
+            background-color: brown;
+        }
+
+        #box-2 {
+            position: relative;
+            top: 39px;
+            z-index: 30;
+            background-color: blue;
+        }
+
+        #box-3 {
+            /* display: none; will hide the element and the space  */
+            /* visibility: hidden; will hide only element but leaves the space of the hidden element  */
+            background-color: aquamarine;
+        }
+
+        #box-4 {
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box" id="box-1"></div>
+    <div class="box" id="box-2"></div>
+    <div class="box" id="box-3"></div>
+    <div class="box" id="box-4"></div>
+
+
+</body>
+
+</html>

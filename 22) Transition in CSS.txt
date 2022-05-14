@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition in CSS</title>
+    <style>
+        body {
+            background-color: aqua;
+        }
+
+        h2 {
+            font-weight: bold;
+            height: 32px;
+            width: 191px;
+            padding: 2px 2px;
+            border: 2px solid red;
+            margin: auto;
+        }
+
+        .box {
+            display: flex;
+            width: 250px;
+            height: 250px;
+            background-color: red;
+            border: 2px solid white;
+            align-items: center;
+            justify-content: center;
+            transition-property: all;
+            transition-duration: 2s;
+            transition-timing-function: ease-in-out;
+
+            /* To write Transition in one line follow the below syntax  */
+            /* transition: transition-property transition-duration transition-timing-function transition-delay; */
+        }
+
+        .box:hover {
+            background-color: blue;
+            height: 400px;
+            width: 400px;
+            border-radius: 100px;
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Teansition in CSS</h2>
+    <div class="container">
+        <div class="box">
+            This is a box
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before And after Pseudo Selector</title>
+    <link href="https://fonts.googleapis.com/css2?family=Akshar:wght@300&family=Ubuntu&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: black;
+            color: white;
+
+        }
+
+        /* Must learn this background technique */
+        header::before {
+            position: absolute;
+            background: url("https://source.unsplash.com/random/1600x900/?img=1") no-repeat center center/cover;
+            content: "";
+            top: 0px;
+            left: 0px;
+            z-index: -1;
+            width: 100%;
+            height: 100%;
+            opacity: 0.5;
+        }
+
+        .navigation {
+            font-family: 'Ubuntu', sans-serif;
+            display: flex;
+            list-style-type: none;
+        }
+
+        li {
+            font-weight: bold;
+            padding: 13px 19px;
+            text-decoration: underline;
+        }
+
+        /* section::before{
+            content: 'This is content which is inserted before the section';
+        } */
+
+        section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* section::after{
+            content: 'This is content which is inserted after the section';
+        } */
+
+        p {
+            text-align: center;
+        }
+
+        h2 {
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 3rem;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="items">Home</li>
+                <li class="items">Service</li>
+                <li class="items">About Us</li>
+                <li class="items">Contact Us</li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h2>Welcome to Coding Ninja</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita consequatur, aut commodi, dolore eius
+            dolores voluptates voluptatum nesciunt consequuntur illo impedit sint placeat culpa!</p>
+    </section>
+    <hr>
+
+</body>
+
+</html>

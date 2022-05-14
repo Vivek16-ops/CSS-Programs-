@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Program</title>
+    <style>
+        .container {
+            border: 3px solid black;
+            width: 100%;
+            height: 500px;
+            /* Initializing the container as a flexbox  */
+            display: flex;
+
+            /* Flex properties for container */
+            /* By default flex properties is row */
+            flex-direction: row;
+
+            /* This will print the item for a opposite side  */
+            /* flex-direction: row-reverse;  */
+
+            /* This will display the item in column  */
+            /* flex-direction: column; */
+
+            /* This will display the item in column but in oppo direction  */
+            /* flex-direction: column-reverse; */
+
+            /* This will help to set the item in box according to the screen size */
+            flex-wrap: wrap;
+            /* flex-wrap: wrap-reverse; */
+
+            /* flex flow help to set multiple properties in one line  */
+            flex-flow: row wrap;
+
+            /* Justified content will align the item horizontally  */
+
+            /* For the aligning the content at center horizontally  */
+            /* justify-content: center; */
+
+            /* There will be equal space given between the items */
+            /* justify-content: space-between; */
+
+            /* Here the space will divide evenly form starting to end */
+            /* justify-content: space-evenly; */
+
+            /* Here the equal space is assign aroud each item */
+            /* justify-content: space-around; */
+
+            /* align item will align the text vertically */
+
+            /* This will align the text at center vertically  */
+            /* align-items: center;
+
+            align-items: flex-end;
+            align-items: flex-start; 
+            */
+
+            /* This will help to assing vertically evenly spaces between the item */
+            /* align-items: stretch; */
+
+        }
+
+        .item {
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+            background-color: tomato;
+            margin: 13px;
+            padding: 3px;
+        }
+
+        /* flex Properties for flex items  */
+        #item-1 {
+            /* This will help to set the order of the items  */
+            /* Highest the order later it will show up in the queue */
+            /* order: 2; */
+        }
+        #item-2 {
+            /* If you stretch the screen then it will take max space as compared to others  */
+            /* flex-grow: 3; */
+        }
+
+        #item-3 {
+            /* if you shrink the screen it will shrink more than other items  */
+             /* flex-shrink: 4; */
+        }
+        #item-4 {
+            flex-basis: 260px;
+            /* It will change the width of the item if direction is set to row 
+            I will chnage the height of the item if direction is set to solumn  */
+        }
+        #item-5 {
+            /* flex: grow shrink basis */
+           flex: 2 2 300px;
+        }
+           /* This will help to allign the individual item  */
+           /* align-self:flex-start;*/
+
+    </style>
+</head>
+
+<body>
+    <h2>Flexbox Program</h2>
+    <div class="container">
+        <div class="item" id="item-1">First Box</div>
+        <div class="item" id="item-2">Second Box</div>
+        <div class="item" id="item-3">Third box</div>
+        <div class="item" id="item-4">Fourth Box</div>
+        <div class="item" id="item-5">Fifth Box</div>
+        <div class="item" id="item-6">Sixth Box</div>
+    </div>
+</body>
+
+</html>

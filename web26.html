@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        .box{
+            background-color: tomato;
+            font-size: 30px;
+            text-align: center;
+            color: white;
+            display: none;
+        }
+        @media only screen and (max-width:300px){
+           #box-1{
+               display: block;
+               background-color: black;
+           }
+        }
+        @media only screen and (min-width:300px) and (max-width:600px){
+           #box-2{
+               display: block;
+               background-color: blue;
+           }
+        }
+        @media only screen and (min-width:600px) and (max-width:900px){
+           #box-3{
+               display: block;
+               background-color: tomato;
+           }
+        }
+        @media only screen and (min-width:900px){
+           #box-4{
+               display: block;
+               background-color: rgb(38, 195, 106);
+           }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box" id="box-1">Mai ek keypad phone hu</div>
+    <div class="box" id="box-2">Mai ek smartphone hu</div>
+    <div class="box" id="box-3">Mai ek desktop computer hu</div>
+    <div class="box" id="box-4">Mai ek widescreen computer hu </div>
+    
+</body>
+</html>

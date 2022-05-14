@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variable and Custom Properties</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Akshar:wght@300&family=Ubuntu&family=Work+Sans:ital,wght@1,500&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            /* This is a global variable which is decalred in this manner .. Always declare global variable inside root only .. */
+            --box-color: blue;
+            --box-height: 229px;
+            --box-width: 250px;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: antiquewhite;
+        }
+
+        .box {
+            /* This box color variable is act like a local variable it vsisible inside the .box only  */
+            --box-color: blue;
+            /*Delcaring Variable */
+            background-color: var(--box-color);
+            /*assigning variable*/
+            margin: 5px 6px;
+            padding: 8px 10px;
+            border: 2px solid red;
+            color: white;
+            height: var(--box-height);
+            width: var(--box-width);
+            box-shadow: 3px 3px 3px green;
+            font-family: 'Work Sans', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <h2>Box 1</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur ipsum obcaecati modi, excepturi iure
+                quae eum fugiat consectetur, rerum iste et! Ipsa nam autem ea, nihil unde eum maiores delectus, rerum
+                reiciendis, aliquam fuga!</p>
+        </div>
+        <div class="box">
+            <h2>Box 2</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur ipsum obcaecati modi, excepturi iure
+                quae eum fugiat consectetur, rerum iste et! Ipsa nam autem ea, nihil unde eum maiores delectus, rerum
+                reiciendis, aliquam fuga!</p>
+        </div>
+        <div class="box">
+            <h2>Box 3</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur ipsum obcaecati modi, excepturi iure
+                quae eum fugiat consectetur, rerum iste et! Ipsa nam autem ea, nihil unde eum maiores delectus, rerum
+                reiciendis, aliquam fuga!</p>
+        </div>
+        <div class="box">
+            <h2>Box 4</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur ipsum obcaecati modi, excepturi iure
+                quae eum fugiat consectetur, rerum iste et! Ipsa nam autem ea, nihil unde eum maiores delectus, rerum
+                reiciendis, aliquam fuga!</p>
+        </div>
+    </div>
+</body>
+
+</html>
